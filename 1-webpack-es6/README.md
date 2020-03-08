@@ -1,22 +1,28 @@
 # 1-webpack-es6
 
-## 此 webpack 專案目的
+> 以下說明皆是以有基本 node.js 的使用知識下進行
 
-此 webpack 專案會將 ES6+ 的 JS 程式碼進行編譯
+## 專案目的
+
+此專案會用 webpack 將 ES6+ 的 JS 程式碼進行編譯
 
 編譯的最後產出能夠讓 JS 程式碼降級到 ES5，讓不支援 ES6+ 的瀏覽器可以直接使用
 
-## 前端專案起手式
-
-此說明是針對，拿到一個前端專案時，通常會先做的事情
+## 專案結構提醒
 
 注意這個 git 載下來後要輸入指令時
 
 一定要在 `\webpack-guide\1-webpack-es6>` 的位置進行
 
-回到起手式，此為用 node.js 進行 webpack 編譯而運行的專案
+## 前端專案起手式
 
-所以就在指令中輸入
+拿到一個前端專案時，通常會先做的事情
+
+觀察專案資料夾內有 `package.json` 這個檔案
+
+就能合理的認為這是一個 node.js 專案
+
+所以就直接在輸入指令
 
 ```bash
 npm install
@@ -24,7 +30,7 @@ npm install
 
 用 cmd 或是 PowerShell 來看大概會是長這樣 `\webpack-guide\1-webpack-es6>npm install`
 
-1-webpack-es6 資料夾內就會多出 node_modules
+1-webpack-es6 資料夾內就會多出 node_modules 這個資料夾
 
 會產生 node_modules 是因為 package.json 裡面有寫好此專案要安裝的第三方函式庫
 
@@ -62,4 +68,4 @@ npm run dev
 
 觀察 webpack 的 entry，知道哪隻檔案是進入點，就能開始看 code 了
 
-
+## 各檔案中都有一些註解，可以看一下，看能不能吸收
